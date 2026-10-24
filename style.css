@@ -1,0 +1,195 @@
+/* Include padding and borders in an element's width. */
+* {
+  box-sizing: border-box;
+}
+
+/* TYPE selectors style elements by their HTML tag name. */
+body {
+  margin: 0;
+  background-color: #f5f1fa;
+  color: #292333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  margin: 0 0 24px;
+  padding: 32px 20px;
+  border-bottom: 6px solid #f5c542;
+  background-color: #4b2473;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+h2,
+h3 {
+  color: #4b2473;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 6px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 2px solid #f5c542;
+  border-radius: 6px;
+  color: #f5c542;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: #f5c542;
+  color: #4b2473;
+  text-decoration: underline;
+}
+
+main {
+  width: 92%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* CLASS selector: styles all three sections with class="card". */
+/* Each card demonstrates margin, padding, and border. */
+.card {
+  margin: 0 0 24px;
+  padding: 24px;
+  border: 2px solid #d3c2e3;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+/* ID selector: styles only the section with id="goals". */
+#goals {
+  border-left: 8px solid #f5c542;
+  background-color: #fff8df;
+}
+
+figure {
+  margin: 20px 0 0;
+  padding: 16px;
+  border: 1px solid #d3c2e3;
+  border-radius: 8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 12px;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  margin: 32px 0 0;
+  padding: 20px;
+  border-top: 4px solid #f5c542;
+  background-color: #4b2473;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* My custom color palette */
+:root {
+  --lime-cream: #edf67dff;
+  --pink-carnation: #f896d8ff;
+  --mauve-magic: #ca7df9ff;
+  --majorelle-blue: #724cf9ff;
+  --dusty-grape: #564592ff;
+}
+
+body {
+  background-color: var(--mauve-magic);
+  color: var(--dusty-grape);
+}
+
+header {
+  background-color: var(--majorelle-blue);
+  color: #ffffff;
+  border-bottom-color: var(--lime-cream);
+}
+
+h2,
+h3 {
+  color: var(--dusty-grape);
+}
+
+nav a {
+  background-color: var(--lime-cream);
+  color: var(--dusty-grape);
+  border-color: var(--lime-cream);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: var(--pink-carnation);
+  color: var(--dusty-grape);
+  border-color: var(--pink-carnation);
+}
+
+.card {
+  background-color: #ffffff;
+  border-color: var(--dusty-grape);
+}
+
+#about {
+  border-top: 8px solid var(--pink-carnation);
+}
+
+#learning {
+  border-top: 8px solid var(--majorelle-blue);
+}
+
+#goals {
+  background-color: var(--lime-cream);
+  border-left-color: var(--dusty-grape);
+}
+
+figure {
+  border-color: var(--mauve-magic);
+}
+
+footer {
+  background-color: var(--dusty-grape);
+  color: #ffffff;
+  border-top-color: var(--pink-carnation);
+}
+
+/* Tangerine and a text shadow for the main page heading only */
+h1 {
+  font-family: "Tangerine", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-shadow: 2px 3px 4px var(--dusty-grape);
+}
